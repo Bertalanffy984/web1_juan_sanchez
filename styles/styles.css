@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+.contents,
+.contenedor_input {
+    display: none;
+}
+
+/* INTRODUCCION */
+#contain_introduction {
+    height: 105dvh;
+    background: url("https://styleshout.com/templates/preview/Ethos_1_0_0/images/hero-bg-3000.jpg") center/cover fixed;
+}
+
+header {
+    padding: 10px;
+    height: 15vh;
+    .contain_barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 99%;
+        right: 1px;
+        height:6%;
+        z-index: 1;
+        top: 1px;
+    }
+    .cube {
+        height: 35px;
+    }
+    .menu {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+.cambiar-contain-barra{
+    background-color: rgb(14, 8, 37);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 30px black;
+}
+#contain_parteA {
+    display: grid;
+    height: 86%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+    grid-template-areas:
+        "."
+        "parrafo"
+        "redes";
+    hr {
+        background-color: coral;
+        border-radius: 10%;
+        margin-left: 20px;
+        margin-top: 60px;
+        height: 2.5px;
+        border: none;
+        width: 11%;
+    }
+    h1 {
+        color: white;
+        grid-area: parrafo;
+        font-size: 2.5em;
+        font-weight: 100;
+        padding: 20px;
+    }
+}
+
+/* DESARROLLO */
+main {
+    background-color: rgb(232, 236, 240);
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    height: 80vh;
+    gap: 3em;
+    h3 {
+        color: rgb(240, 158, 129);
+        letter-spacing: 3px;
+    }
+    h2 {
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        font-size: 1.9em;
+    }
+}
+
+#contain_img {
+    position: absolute;
+    height: 285px;
+    width: 300px;
+    left: 10px;
+    img {
+        box-shadow: 0 0 10px rgb(54, 54, 54);
+        filter: opacity(90%);
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#profile {
+    padding: 30px 20px;
+    height: 90vh;
+    h2 {
+        color: coral;
+        padding-bottom: 20px;
+    }
+    p {
+        letter-spacing: 1px;
+        font-size: 1.1em;
+    }
+}
+
+/* CARRERA */
+#career {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .title_career {
+        padding: 0 0 30px 0;
+        width: 90vw;
+        h2 {
+            color: coral;
+        }
+    }
+}
+
+.artic_career {
+    height: 50vh;
+    width: 90vw;
+    .header_career {
+        border-top: solid rgb(184, 169, 169);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        height: 40%;
+        gap: 10px;
+        .content_img_lenguage {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .title_header_career {
+                letter-spacing: 1px;
+                font-weight: 200;
+            }
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+        .fecha_header_career {
+            color: rgb(132, 136, 139);
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
+    }
+    .parrafo_career {
+        font-size: 1.1em;
+        padding: 20px;
+    }
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: rgb(2, 2, 24);
+    height: 120vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 30% 5% 22.5% 22.5%;
+    grid-template-areas:
+        "."
+        "titulo_final"
+        "imagen"
+        "."
+        "contacto"
+        "mas_ref";
+}
+
+.contain_tile_final {
+    grid-area: titulo_final;
+    h5 {
+        color: rgb(207, 74, 25);
+        letter-spacing: 3px;
+    }
+}
+
+.contain_img_final {
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    img {
+        box-shadow: 0 0 30px black;
+        filter: opacity(60%);
+        border-radius: 5px;
+        width: 60%;
+    }
+}
+
+label {
+    color: rgb(134, 132, 129);
+}
+
+.contain_contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contain_mas_ref {
+    grid-area: mas_ref;
+    ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        list-style: none;
+        padding: 20px;
+        gap: 10px;
+        li {
+            img {
+                height: 20px;
+            }
+        }
+    }
+}
+
+/* SLIDER */
+aside {
+    padding: 20px;
+    height: 100vh;
+    background-color: rgb(232, 236, 240);
+    h2 {
+        color: coral;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.slider-wraper {
+    position: relative;
+    height: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    height: 90%;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 15px rgb(14, 13, 13);
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+}
+
+.slider-nav {
+    height: 5%;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider-nav a {
+    background-color: rgb(11, 2, 49);
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 100%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+    header .contain_barra .cube{
+        height: 50px;
+    }
+    /* ENCABEZADO */
+    header {
+        .contain_barra {
+            width: 100%;
+            height: 8%;
+            left: 1px;
+            #nav_introduccion {
+                width: 90%;
+                ul {
+                    display: flex;
+                    height: 100%;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    list-style: none;
+                    a {
+                        color: rgb(138, 131, 131);
+                        text-decoration: none;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+    header #nav_introduccion ul li a:hover{
+        color:  white;
+    }
+    #contain_parteA {
+        h1 {
+            color: #ffff;
+            width: 20em;
+            font-size: 4.3em;
+        }
+    }
+    /* DESARROLLO */
+    #contenedor_desarrollo {
+        height: 120vh;
+        display: grid;
+        grid-template-columns: 50% 20% 30%;
+        grid-template-rows: 20% 20% 50% 10%;
+        grid-template-areas:
+            "presentacion . fondo"
+            "presentacion imagen fondo"
+            "parrafo imagen fondo"
+            ". . fondo";
+    }
+    .presentacion {
+        grid-area: presentacion;
+        height: auto;
+    }
+    #profile {
+        grid-area: parrafo;
+        margin-top: 50px;
+        height: auto;
+        p {
+            font-size: 1.4em;
+        }
+    }
+    #contain_img {
+        position: static;
+        grid-area: imagen;
+        height: 100%;
+        width: 100%;
+        img {
+            width: auto;
+            filter: opacity(100%);
+        }
+    }
+    #fondo {
+        background-color: rgb(136, 176, 179);
+        grid-area: fondo;
+    }
+    #career {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .artic_career {
+        height: 50%;
+        width: 40%;
+        .parrafo_career{
+            font-size: 1.7em;
+        }
+    }
+    /* PIE DE PAGINA */
+    footer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 5% 50% 20% 5% 20%;
+        grid-template-rows: 10% 10% 20% 40% 20%;
+        grid-template-areas:
+            ". . . . ."
+            ". titulo_final . . ."
+            ". imagen contacto . mas_ref "
+            ". imagen text_area text_area text_area"
+            ". . . . .";
+    }
+    .contain_tile_final {
+        grid-area: titulo_final;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor_input {
+        grid-area: text_area;
+        display: flex;
+        label {
+            margin-top: 5em;
+            textarea {
+                box-shadow: 0 10px 30px rgb(0, 0, 0);
+                background-color: rgb(2, 2, 26);
+                border: solid black;
+                color: white;
+                min-width: 200%;
+                padding: 15px;
+                resize: none;
+            }
+        }
+    }
+    .slider {
+        box-shadow: none;
+    }
+    .slider img {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: contain;
+    }
+}
