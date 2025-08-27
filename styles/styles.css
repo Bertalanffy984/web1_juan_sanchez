@@ -4,8 +4,12 @@
     box-sizing: content-box;
     font-family: sans-serif;
 }
+a{
+    text-decoration: none;
+    color: rgb(132, 136, 139);
+}
 
-.contents,
+
 .contenedor_input {
     display: none;
 }
@@ -14,6 +18,29 @@
 #contain_introduction {
     height: 105dvh;
     background: url("https://styleshout.com/templates/preview/Ethos_1_0_0/images/hero-bg-3000.jpg") center/cover fixed;
+}
+.contents{
+    right:0;
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+.viw-tabla{
+    transform: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: rgba(17, 10, 44, 0.397);
+    padding: 15px;
+    li{
+        border-bottom: solid rgb(172, 168, 168);
+        width: 100%;
+    }
+    a{
+        color: rgb(61, 59, 59);
+        letter-spacing: 1px;
+    }
 }
 
 header {
@@ -36,6 +63,7 @@ header {
     .menu {
         width: 30px;
         height: 30px;
+        cursor: pointer;
     }
 
 }
@@ -70,6 +98,7 @@ header {
         padding: 20px;
     }
 }
+
 
 /* DESARROLLO */
 main {
@@ -310,6 +339,7 @@ aside {
             #nav_introduccion {
                 width: 90%;
                 ul {
+                    position: static;
                     display: flex;
                     height: 100%;
                     justify-content: space-evenly;
