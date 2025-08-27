@@ -26,7 +26,6 @@ a{
     list-style: none;
 }
 .viw-tabla{
-    transform: unset;
     display: flex;
     flex-direction: column;
     align-items: start;
